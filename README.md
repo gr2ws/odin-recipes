@@ -7,7 +7,7 @@ Adding bold and italicized words.
 Making ordered and unordered list and list items.
 Adding links and images. 
 ## Indirectly Involves the Following Skills:
-Using the Linux Terminal to change directories,create files, and open files in VSCode.
+Using the Linux Terminal to change directories, create files, and open files in VSCode.
 Cloning a github repository.
 Following the git workflow.
 Pushing changes to github.
