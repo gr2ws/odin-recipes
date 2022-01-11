@@ -1,0 +1,41 @@
+* {
+    background-color: black;
+    color: white;
+    text-align: justify;
+}
+
+div {
+    border-style: solid;
+    border-width: 2.5px;
+    padding: 20px 40px 20px 40px;
+    margin: 3px 200px 3px 200px;
+    border-radius: 20px;
+}
+
+p, li {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 18px;
+}
+
+h1, 
+h2,
+#back-box {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center; 
+    font-weight: bold;
+}
+
+#back-box {
+    font-size: 30px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
