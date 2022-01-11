@@ -12,6 +12,11 @@ div {
     border-radius: 20px;
 }
 
+p {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 18px;
+}
+
 h1 {
     font-size: 80px;
 }
@@ -20,19 +25,8 @@ h2 {
     font-size: 50px;
 }
 
-#title-box {    
-    border-style: none;
-    border-width: 2.5px;
-    padding: 0px;
-    margin: 3px 200px 3px 200px;
-    border-radius: 20px;
-}
-
-.p {
-    font-family: 'Lucida Sans Unicode', sans-serif;
-}
-
-.heading,
+h1, 
+h2,
 .recipe-box {
     font-family: 'Segoe UI', sans-serif;
     text-align: center; 
