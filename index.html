@@ -6,62 +6,76 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="index.css" rel="stylesheet" type="text/css">
-<title> R2ws' Recipes </title>
+<title> Odin Recipes </title>
 </head>
 
 <body>
 
-<header>
-    <h1> R2ws' Recipes </h1> 
+<header class="title">
+    <h1> Odin Recipes </h1> 
 </header>
 
-<nav>
-    <ul>
-        <li>
-            <h2> Butter Chicken </h2> 
-            <p> Traditionally boneless chicken drowned in a delicious gravy and topped with various spices. </p> 
-            <a href="recipes/butter-chicken.html"> <img src="recipes/butter-chicken.jpeg" alt="A picture of delicious butter chicken."> </a> </li>
+<div class="body-container">
 
-        <li>
-            <h2> Rice Biryani </h2> 
-            <p> A rice dish with an oily precooked spice mix buried within, mixed before serving. </p> 
-            <a href="recipes/rice-biryani.html"> <img src="recipes/rice-biryani.jpeg" alt="A picture of rice biryani."> </a> </li> 
+<nav class="recipes">
+    <ul class="recipes-list">
 
-        <li>
-            <h2> Rice Pilaf </h2> 
-            <p> Basically rice biryani, but the spice blend is cooked simultaneously with the rice. </p> 
-            <a href="recipes/rice-pilaf.html"> <img src="recipes/rice-pilaf.jpeg" alt="A picture of rice pilaf."> </a> </li>
+        <li class="but-chi">
+            <div class="but-chi-overlay overlay">          
+                <h2> Butter Chicken </h2> 
+                    <p> Traditionally boneless chicken drowned in a delicious gravy and topped with various spices. </p> 
+            </div>
+            <a href="recipes/butter-chicken.html"> <img src="recipes/butter-chicken.jpeg" alt="A picture of delicious butter chicken."> </a>            
+        </li>
+
+        <li class="rice-bir">
+            <div class="rice-bir-overlay overlay">
+                <h2> Rice Biryani </h2> 
+                <p> A rice dish with an oily precooked spice mix buried within, mixed before serving. </p> 
+            </div>
+            <a href="recipes/rice-biryani.html"> <img src="recipes/rice-biryani.jpeg" alt="A picture of rice biryani."> </a> 
+        </li> 
+
+        <li class="rice-pi">
+            <div class="rice-pi-overlay overlay">
+                <h2> Rice Pilaf </h2> 
+                <p> Basically rice biryani, but the spice blend is cooked simultaneously with the rice. </p> 
+            </div>
+            <a href="recipes/rice-pilaf.html"> <img src="recipes/rice-pilaf.jpeg" alt="A picture of rice pilaf."> </a> 
+        </li>
+        
     </ul>
 </nav>
 
-<div>
+<div class="content">
 <main>
     <h2> Hello! </h2>
 
     <p>
-    Welcome to my recipes page! The recipes here are ones that I've found online, memorized, and modified. As such, they are most probably, in no way, shape, or form, authentic to their original counterparts. </p>
+    Welcome to my recipes page! The recipes here are ones that I've found online, memorized, and modified. As such, they are most probably, in no way, shape, or form, authentic to their original counterparts. 
+    </p>
 
     <p>
-    I don't have access to a wide variety of ingredients as I live in a rural area, so the modifications made to these recipes are specific to my own situation and may not apply to yours. It doesn't mean they aren't delicious though! </p>
+    I don't have access to a wide variety of ingredients as I live in a rural area, so the modifications made to these recipes are specific to my own situation and may not apply to yours. It doesn't mean they aren't delicious though! 
+    </p>
 
-    <p>
-    A quick disclaimer, the steps in my recipes aren't exactly specific, since I memorize these recipes. I state what you should look out for and what you should do afterwards. I believe this is good practice as it allows a person to be a better cook, enabling them to improvise recipes rather than follow a specific one. </p>
+    <p> 
+    A quick disclaimer, the steps in my recipes aren't exactly specific, since I memorize these recipes. I state what you should look out for and what you should do afterwards. I believe this is good practice as it allows a person to be a better cook, enabling them to improvise recipes rather than follow a specific one. 
+    </p>
 </main>
+</div>
+
+</div>
 
 <footer>
-    <div>
-        <img src="odin-logo.jpg" alt="The Odin Project logo."> 
-        <p> Odin Project: Recipes </p> 
-        <p> By: r2ws </p>
+    <div class="input">
+        <input type="checkbox" id="dark-mode">
+        <h3>Dark Mode</h3>
     </div>
-    <div>
-    <ul>
-        <li> <a href="https://github.com/gr2ws" target="_blank"> Github </a> </li>
-        <li> <a href="https://github.com/gr2ws/odin-recipes" target="_blank"> Project Repository </a> </li>
-    </ul>
-    </div>
+    <h3> Made by: r2ws </h3>
+    <a href="https://github.com/gr2ws" target="_blank"> My Github </a> 
+    <a href="https://github.com/gr2ws/odin-recipes" target="_blank"> Project Repository </a>
 </footer>
-</div>
 
 </body>
 </html>

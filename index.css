@@ -1,0 +1,100 @@
+/* ##### BASE LAYOUT ##### */
+/* Will be overwritten by identical selectors for animation */
+
+/* ##### Color Variables ##### */
+:root {
+    --header: #ce973e;
+    --text-n-borders: #808080;
+    --background: white;
+    --image-overlay: ;
+}
+
+/* ##### Background / Non-Flex Layout ##### */
+
+body {
+    background-color: var(--background);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+/* ##### Typography ##### */
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse.otf);
+}
+
+h1, h2 {
+    font-family: Norse, sans-serif;
+    color: var(--header);
+}
+
+p, h3 , a {
+    color: var(--text-n-borders);
+    font-family: Open Sans, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer h3, a {
+    font-size: 1.1rem;
+}
+
+footer h2 {
+    font-size: 2.1rem;
+}
+
+/* ##### Images ##### */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+}
+
+/* ##### Layout ##### */
+
+.body-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem 10rem 1rem 10rem;
+    gap: 5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 2rem;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
