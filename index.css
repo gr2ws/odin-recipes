@@ -1,0 +1,130 @@
+
+/* ##### BASE LAYOUT #####
+Will be overwritten for animations. */
+
+/* ##### Variables ##### */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --odin-blue: #6abfc3;
+    --background-blue: #060F0F;
+    --card-blue: #0C1E1F ;
+    --text-shadow: #D4EDEE;
+}
+
+/* ##### Typography ##### */
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse.otf);
+}
+
+h1 {
+    font-family: Norse, sans-serif;
+    color: var(--odin-blue);
+    font-size: 10rem;
+}
+
+h2, 
+footer p, 
+footer a {
+    font-family: Norse, sans-serif;
+    color: var(--odin-blue);
+    font-size: 3rem;
+}
+
+.overlay h2, 
+footer p,
+footer a {
+    font-size: 2rem;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+
+a {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ##### Images ##### */
+
+img {
+    height: 21vw;
+    width: 21vw;
+    min-height: 200px;
+    min-width: 200px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.overlay {
+    height: 21vw;
+    width: 21vw;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid var(--card-blue);
+}
+
+/* ##### Backgrounds / Cards Colors #####*/
+
+body, nav li {
+    background-color: var(--background-blue);
+}
+ 
+nav, 
+main {
+    background-color: var(--card-blue);
+    border-radius: 20px;
+}
+
+/* ##### Layout ##### */
+
+body {
+    margin: auto;
+    padding: 1vw 10vw 1vw 10vw;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'navigation navigation main main main'
+    'footer footer footer footer footer';
+    gap: 2vw 5vw;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    margin: -8vw;
+}
+
+nav {
+    grid-area: navigation;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
