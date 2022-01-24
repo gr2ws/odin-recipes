@@ -1,6 +1,26 @@
+/* ##### TABLE OF CONTENTS #####
+
+Use Ctrl + F to skip to item.
+
+BASE LAYOUT
+    Variables
+    Typography
+    Images
+    Backgrounds
+    Layout
+
+ANIMATIONS
+    Navigation Bar - Initial
+    Navigation Bar - Hover
+    Footer - Hover
+    Start Animations
+
+END
+
+##### TABLE OF CONTENTS ##### */
 
 /* ##### BASE LAYOUT #####
-Will be overwritten for animations. */
+Will be overwritten for animations/pseudo-selectors. */
 
 /* ##### Variables ##### */
 
@@ -13,6 +33,7 @@ Will be overwritten for animations. */
     --background-blue: #060F0F;
     --card-blue: #0C1E1F ;
     --text-shadow: #D4EDEE;
+    --text-white: #EDEDED;
 }
 
 /* ##### Typography ##### */
@@ -32,11 +53,11 @@ h2,
 footer p, 
 footer a {
     font-family: Norse, sans-serif;
+    text-decoration: none;
     color: var(--odin-blue);
     font-size: 3rem;
 }
-
-.overlay h2, 
+ 
 footer p,
 footer a {
     font-size: 2rem;
@@ -45,20 +66,38 @@ footer a {
 p {
     font-family: sans-serif;
     font-size: 1.1rem;
-    color: white;
+    color: var(--text-white);
 }
 
-a {
-    font-family: sans-serif;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: white;
-}
-
-ul {
+.recipes-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .3vw;
+}
+
+.overlay h2 {
+    margin-bottom: -.5vw;
+    text-shadow: 2px 2px 5px var(--background-blue);
+    font-size: 3.5vw;
+}
+
+.overlay p {
+    text-shadow: 2px 2px 5px var(--background-blue);  
+}
+
+.content h2 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px var(--background-blue);
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px var(--background-blue);
+    margin-bottom: 3vw;
 }
 
 /* ##### Images ##### */
@@ -83,13 +122,12 @@ img {
     border: 3px solid var(--card-blue);
 }
 
-/* ##### Backgrounds / Cards Colors #####*/
+/* ##### Backgrounds #####*/
 
 body, nav li {
     background-color: var(--background-blue);
 }
  
-nav, 
 main {
     background-color: var(--card-blue);
     border-radius: 20px;
@@ -120,6 +158,7 @@ nav {
 
 main {
     grid-area: main;
+    min-height: fit-content;
 }
 
 footer {
@@ -128,3 +167,149 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.overlay {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1vw;
+    flex-flow: column nowrap;
+}
+
+main {
+    padding: 1vw 5vw 1vw 5vw;
+    text-align: justify;
+}
+
+/* ##### ANIMATIONS #####*/
+
+/* ##### Navigation Bar - Initial ##### */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.overlay p{
+    opacity: 0%;
+}
+
+.ol-header { 
+    opacity: 0%;
+}
+
+/* ##### Navigation Bar - Hover ##### */
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: ease;
+    transition-duration: .8s;
+    box-shadow: 1px 1px 20px var(--text-white);
+}
+
+.overlay:hover .nav-p {
+    opacity: 100%;
+    transition: ease;
+    transition-duration: .5s;
+}
+
+.overlay:hover .ol-header {
+    opacity: 100%;
+    margin-bottom: .8vw;
+    font-size: 3.5vw;
+    background: transparent;
+    position: relative;
+    transition: ease;
+    transition-duration: .8s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: ease;
+    transition-duration: .1s;
+}
+
+/* ##### Footer - Hover ##### */
+
+.footer-link {
+    color: var(--odin-blue);
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: var(--text-white);
+    text-shadow: 0px 0px 2px var(--text-shadow);
+    transition: ease;
+    transition-duration: .3s;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* ##### Start Animations ##### */
+
+footer {
+    animation-name: footer;
+    position: relative;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes footer {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+header {
+    animation-name: header;
+    position: relative;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes header {
+    0% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+nav {
+    animation-name: nav;
+    position: relative;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes nav {
+    0% {
+        right: 200px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+main {
+    animation-name: main;
+    position: relative;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes main {
+    0% {
+        left: 200px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+/* ##### END ##### */
