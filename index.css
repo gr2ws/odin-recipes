@@ -248,16 +248,21 @@ ul li:hover {
 
 /* ##### Start Animations ##### */
 
+body {
+    overflow-x: hidden;
+}
+
 footer {
     animation-name: footer;
     position: relative;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
 }
 
 @keyframes footer {
     0% {
-        top: 100px;
+        opacity: .5;
+        top: 50px;
     }
     100% {
         top: 0px;
@@ -273,7 +278,8 @@ header {
 
 @keyframes header {
     0% {
-        bottom: 100px;
+        opacity: 0;
+        bottom: 50px;
     }
     100% {
         bottom: 0px;
