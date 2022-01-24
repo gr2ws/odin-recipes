@@ -15,6 +15,12 @@ ANIMATIONS
     Footer - Hover
     Start Animations
 
+MOBILE
+    M - Typography
+    M - Images
+    M - Layout
+    M - Animations
+
 END
 
 ##### TABLE OF CONTENTS ##### */
@@ -89,13 +95,13 @@ p {
 }
 
 .content h2 {
-    font-size: 5rem;
+    font-size: 7vw;
     text-shadow: 2px 2px 5px var(--background-blue);
     text-align: center;
 }
 
 .content p {
-    font-size: 1.3rem;
+    font-size: clamp(16px, 1.45vw, 1.45vw);
     text-shadow: 2px 2px 5px var(--background-blue);
     margin-bottom: 3vw;
 }
@@ -158,14 +164,15 @@ nav {
 
 main {
     grid-area: main;
-    min-height: fit-content;
+    padding: 1vw 5vw 1vw 5vw;
+    text-align: justify;
 }
 
 footer {
     grid-area: footer;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .overlay {
@@ -175,11 +182,6 @@ footer {
     display: flex;
     padding: 1vw;
     flex-flow: column nowrap;
-}
-
-main {
-    padding: 1vw 5vw 1vw 5vw;
-    text-align: justify;
 }
 
 /* ##### ANIMATIONS #####*/
@@ -315,6 +317,125 @@ main {
     }
     100% {
         left: 0px;
+    }
+}
+
+/* ##### MOBILE ##### */
+
+@media screen and (max-width: 800px) {
+
+/* ##### M - Typography ##### */
+
+header h1 {
+    font-size: 20vw;
+    text-align: center;
+    margin: 20vw 6vw 10vw 6vw;
+    padding: 0px;
+}
+
+.content h2 {
+    font-size: 13vw;
+}
+
+.content p {
+    font-size: 4vw;
+}
+
+.overlay p{
+    opacity: 100%;
+    font-size: 3vw;
+    padding: 2vw 10vw 2vw 10vw;
+}
+
+li .ol-header { 
+    opacity: 100%;
+    font-size: 7vw;
+}
+
+/* ##### M - Images ##### */
+
+img {
+    height: 21vw;
+    width: 90vw;
+    min-height: 200px;
+    min-width: 200px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.overlay {
+    height: 21vw;
+    width: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid var(--card-blue);
+}
+
+/* ##### M - Layout #####*/
+
+body {
+    margin: auto;
+    padding: 1vw 5vw 1vw 5vw;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'navigation'
+    'footer';
+}
+
+.recipes-list {
+    align-items: center;
+    justify-content: center;
+}
+
+nav .recipes-list {
+    gap: 1vw;
+}
+
+footer {
+    margin-top: -3vw;
+}
+/* ##### M - Animations ##### */
+
+.overlay:hover .ol-header {
+    opacity: 100%;
+    margin-bottom: -0vw;
+    font-size: 7vw;
+    background: transparent;
+    position: relative;
+    transition: ease;
+    transition-duration: .8s;
+}
+
+ul li:hover {
+    transform: scale(1);
+    z-index: 1;
+    transition: ease;
+    transition-duration: .1s;
+    }
+
+@keyframes header {
+    0% { opacity: 0; transform: scale(.8);}
+    100% { }
+    }
+    
+@keyframes nav {
+    0% { opacity: 0; transform: scale(.8);}
+    100% { }
+    }
+                
+@keyframes main {
+    0% { opacity: 0; transform: scale(.8);}
+    100% { }
+    }        
+
+@keyframes footer {
+    0% { opacity: 0; transform: scale(.8);}
+    100% { }
     }
 }
 
