@@ -1,7 +1,5 @@
 /* ##### TABLE OF CONTENTS #####
 
-Use Ctrl + F to skip to item.
-
 BASE LAYOUT
     Variables
     Typography
@@ -25,8 +23,7 @@ END
 
 ##### TABLE OF CONTENTS ##### */
 
-/* ##### BASE LAYOUT #####
-Will be overwritten for animations/pseudo-selectors. */
+/* ##### BASE LAYOUT ##### */
 
 /* ##### Variables ##### */
 
@@ -55,15 +52,15 @@ h1 {
     font-size: 10rem;
 }
 
-h2, 
-footer p, 
+h2,
+footer p,
 footer a {
     font-family: Norse, sans-serif;
     text-decoration: none;
     color: var(--odin-blue);
     font-size: 3rem;
 }
- 
+
 footer p,
 footer a {
     font-size: 2rem;
@@ -91,7 +88,7 @@ p {
 }
 
 .overlay p {
-    text-shadow: 2px 2px 5px var(--background-blue);  
+    text-shadow: 2px 2px 5px var(--background-blue);
 }
 
 .content h2 {
@@ -133,7 +130,7 @@ img {
 body, nav li {
     background-color: var(--background-blue);
 }
- 
+
 main {
     background-color: var(--card-blue);
     border-radius: 20px;
@@ -145,7 +142,7 @@ body {
     margin: auto;
     padding: 1vw 10vw 1vw 10vw;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     'header header header header header'
     'navigation navigation main main main'
     'footer footer footer footer footer';
@@ -196,7 +193,7 @@ footer {
     opacity: 0%;
 }
 
-.ol-header { 
+.ol-header {
     opacity: 0%;
 }
 
@@ -343,11 +340,11 @@ header h1 {
 
 .overlay p{
     opacity: 100%;
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 2vw 10vw 2vw 10vw;
 }
 
-li .ol-header { 
+li .ol-header {
     opacity: 100%;
     font-size: 7vw;
 }
@@ -380,7 +377,7 @@ body {
     margin: auto;
     padding: 1vw 5vw 1vw 5vw;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     'header'
     'main'
     'navigation'
@@ -422,16 +419,16 @@ ul li:hover {
     0% { opacity: 0; transform: scale(.8);}
     100% { }
     }
-    
+
 @keyframes nav {
     0% { opacity: 0; transform: scale(.8);}
     100% { }
     }
-                
+
 @keyframes main {
     0% { opacity: 0; transform: scale(.8);}
     100% { }
-    }        
+    }
 
 @keyframes footer {
     0% { opacity: 0; transform: scale(.8);}
