@@ -1,4 +1,4 @@
-/* ##### TABLE OF CONTENTS #####
+/*##### TABLE OF CONTENTS #####
 
 BASE LAYOUT
     Variables
@@ -21,7 +21,7 @@ MOBILE
 
 END
 
-##### TABLE OF CONTENTS ##### */
+##### TABLE OF CONTENTS #####*/
 
 /* ##### BASE LAYOUT ##### */
 
@@ -33,7 +33,7 @@ END
 
 :root {
     --odin-blue: #6abfc3;
-    --background-blue: #060F0F;
+    --background-blue: #030707;
     --card-blue: #0C1E1F ;
     --text-shadow: #D4EDEE;
     --text-white: #EDEDED;
@@ -258,14 +258,9 @@ footer {
     animation-timing-function: ease-out;
 }
 
-@keyframes footer {
-    0% {
-        opacity: .5;
-        top: 50px;
-    }
-    100% {
-        top: 0px;
-    }
+@keyframes footer { 
+    0% {opacity: .5; top: 50px;} 
+    100% {top: 0px;} 
 }
 
 header {
@@ -275,14 +270,9 @@ header {
     animation-timing-function: ease-out;
 }
 
-@keyframes header {
-    0% {
-        opacity: 0;
-        bottom: 50px;
-    }
-    100% {
-        bottom: 0px;
-    }
+@keyframes header { 0% 
+    {opacity: 0; bottom: 50px;} 
+    100% {bottom: 0px;} 
 }
 
 nav {
@@ -292,13 +282,9 @@ nav {
     animation-timing-function: ease-out;
 }
 
-@keyframes nav {
-    0% {
-        right: 200px;
-    }
-    100% {
-        right: 0px;
-    }
+@keyframes nav { 
+    0% {right: 200px;} 
+    100% {right: 0px;} 
 }
 
 main {
@@ -308,18 +294,14 @@ main {
     animation-timing-function: ease-out;
 }
 
-@keyframes main {
-    0% {
-        left: 200px;
-    }
-    100% {
-        left: 0px;
-    }
+@keyframes main { 0% 
+    {left: 200px;} 
+    100% {left: 0px} 
 }
 
 /* ##### MOBILE ##### */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
 
 /* ##### M - Typography ##### */
 
@@ -342,6 +324,7 @@ header h1 {
     opacity: 100%;
     font-size: 4vw;
     padding: 2vw 10vw 2vw 10vw;
+    margin-top: -1vw;
 }
 
 li .ol-header {
@@ -415,25 +398,26 @@ ul li:hover {
     transition-duration: .1s;
     }
 
-@keyframes header {
-    0% { opacity: 0; transform: scale(.8);}
-    100% { }
-    }
+@keyframes header { 
+    0% {opacity: 0; transform: scale(.8);} 
+    100% {} 
+}
 
-@keyframes nav {
-    0% { opacity: 0; transform: scale(.8);}
-    100% { }
-    }
+@keyframes nav { 
+    0% {opacity: 0; transform: scale(.8);} 
+    100% {} 
+}
 
-@keyframes main {
-    0% { opacity: 0; transform: scale(.8);}
-    100% { }
-    }
+@keyframes main { 
+    0% {opacity: 0; transform: scale(.8);} 
+    100% {} 
+}
 
-@keyframes footer {
-    0% { opacity: 0; transform: scale(.8);}
-    100% { }
-    }
+@keyframes footer { 
+    0% {opacity: 0; transform: scale(.8);} 
+    100% {} 
+}
+
 }
 
 /* ##### END ##### */
