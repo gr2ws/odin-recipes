@@ -1,28 +1,3 @@
-/*##### TABLE OF CONTENTS #####
-
-BASE LAYOUT
-    Variables
-    Typography
-    Images
-    Backgrounds
-    Layout
-
-ANIMATIONS
-    Navigation Bar - Initial
-    Navigation Bar - Hover
-    Footer - Hover
-    Start Animations
-
-MOBILE
-    M - Typography
-    M - Images
-    M - Layout
-    M - Animations
-
-END
-
-##### TABLE OF CONTENTS #####*/
-
 /* ##### BASE LAYOUT ##### */
 
 /* ##### Variables ##### */
@@ -187,10 +162,12 @@ footer {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0);
+    transition: all .3s ease;
 }
 
 .overlay p{
     opacity: 0%;
+    transition: all .2s ease;
 }
 
 .ol-header {
@@ -201,15 +178,11 @@ footer {
 
 .overlay:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    transition: ease;
-    transition-duration: .8s;
     box-shadow: 1px 1px 20px var(--text-white);
 }
 
 .overlay:hover .nav-p {
     opacity: 100%;
-    transition: ease;
-    transition-duration: .5s;
 }
 
 .overlay:hover .ol-header {
@@ -219,7 +192,7 @@ footer {
     background: transparent;
     position: relative;
     transition: ease;
-    transition-duration: .8s;
+    transition-duration: .6s;
 }
 
 ul li:hover {
@@ -234,13 +207,12 @@ ul li:hover {
 .footer-link {
     color: var(--odin-blue);
     text-decoration: underline;
+    transition: all .1s ease;
 }
 
 .footer-link:hover {
     color: var(--text-white);
     text-shadow: 0px 0px 2px var(--text-shadow);
-    transition: ease;
-    transition-duration: .3s;
     text-decoration: none;
     font-weight: 900;
 }
@@ -254,7 +226,7 @@ body {
 footer {
     animation-name: footer;
     position: relative;
-    animation-duration: 2s;
+    animation-duration: .7s;
     animation-timing-function: ease-out;
 }
 
@@ -266,7 +238,7 @@ footer {
 header {
     animation-name: header;
     position: relative;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-timing-function: ease-out;
 }
 
@@ -278,7 +250,7 @@ header {
 nav {
     animation-name: nav;
     position: relative;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-timing-function: ease-out;
 }
 
@@ -290,7 +262,7 @@ nav {
 main {
     animation-name: main;
     position: relative;
-    animation-duration: 1s;
+    animation-duration: .7s;
     animation-timing-function: ease-out;
 }
 
@@ -387,15 +359,13 @@ footer {
     font-size: 7vw;
     background: transparent;
     position: relative;
-    transition: ease;
-    transition-duration: .8s;
+    transition: all .1 ease;
 }
 
 ul li:hover {
     transform: scale(1);
     z-index: 1;
-    transition: ease;
-    transition-duration: .1s;
+    transition: all .1s ease;
     }
 
 @keyframes header { 
